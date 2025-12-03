@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  foo: bar
+  qux: qaz
+kind: ConfigMap
+metadata:
+  name: app
