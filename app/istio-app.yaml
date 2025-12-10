@@ -14,25 +14,16 @@ spec:
   - repoURL: https://istio-release.storage.googleapis.com/charts
     targetRevision: 1.28.1
     helm:
-      valueFiles:
-        - >-
-          $values/aws/clusters/apps-dev-1/angkor-platform/istio/values.istiod.yaml
       releaseName: istiod
     chart: istiod
   - repoURL: https://istio-release.storage.googleapis.com/charts
     targetRevision: 1.28.1
     helm:
-      valueFiles:
-        - >-
-          $values/aws/clusters/apps-dev-1/angkor-platform/istio/values.istio-cni.yaml
       releaseName: istio-cni
     chart: cni
   - repoURL: https://istio-release.storage.googleapis.com/charts
     targetRevision: 1.28.1
     helm:
-      valueFiles:
-        - >-
-          $values/aws/clusters/apps-dev-1/angkor-platform/istio/values.ztunnel.yaml
       releaseName: ztunnel
     chart: ztunnel
   destination:
